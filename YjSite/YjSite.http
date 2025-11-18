@@ -1,0 +1,6 @@
+@YjSite_HostAddress = http://localhost:5163
+
+GET {{YjSite_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
