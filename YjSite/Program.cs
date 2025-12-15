@@ -15,6 +15,8 @@ using YjSite.Services.Auth;
 using YjSite.Services.Files;
 using YjSite.Services.DefaultImageService;
 using YjSite.Services.UserService;
+using YjSite.Services.LifeShareService;
+using YjSite.Services.OssService;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,6 +45,8 @@ builder.Services.AddScoped<IBlogTagsService, BlogTagsService>();
 builder.Services.AddScoped<IPlanService, PlanService>();
 builder.Services.AddScoped<IDefaultImageService, DefaultImageService>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ILifeShareService, LifeShareService>();
+builder.Services.AddScoped<IOssService, OssService>();
 // TODO: 注册其他服务
 // builder.Services.AddScoped<IAuthService, AuthService>();
 // builder.Services.AddScoped<IFileService, FileService>();
